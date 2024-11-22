@@ -1,0 +1,339 @@
+:root
+{
+    --blue : #2C2546
+    --dark-blue : #1B1535
+    --green : #00EB09
+    --white : #fff
+}
+*
+{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style-type: none;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body
+{
+    background-color: #A6AEBF;
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header
+{
+    align-items: center;
+    background-color: #222831;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    font-weight:bold;
+    padding: 2%;
+    top: 0;
+}
+
+.title
+{
+    color: #FF7800;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 50px;
+    float: left;
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius: 0 0 0 0;
+    padding: 10px;
+    
+}
+
+.input-submit
+{
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 0 0 0;
+    padding: 10px;
+    background-color: #FBFBFB;
+    color: #000000;
+    width: 5%;
+    font-weight: bold;
+} 
+
+nav
+{
+    margin-top: 15px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: #FBFBFB;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}.slider
+{
+    margin-top: 10%;
+    display: B;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+    color: #FBFBFB;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+  
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p
+{
+    margin-top: 5%;
+    margin-left: 60px;
+}
+.populer
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.populer img
+{
+    border-radius: 10px;
+}
+
+.harga
+{
+    color: #FBFBFB;
+}
+
+.content
+{
+    color: #FF7800;
+}
+
+.link a
+{
+    color: #FBFBFB;
+}
+
+.pesan
+{
+    background-color: #FBFBFB;
+    padding: 15px;
+}
+
+.pesan img
+{
+    width: 30px;
+}
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: var(--blue);
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 20px 20px black;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue);
+    margin-top: 10%;
+    padding: 2%;
+}
+ 
+.sosmed img 
+{
+    width: 50px;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+}
+.bar-login 
+{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+.form {
+    margin: 0;
+}
